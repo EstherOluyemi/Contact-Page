@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="/submit" method="post" id="form">
+            <div class="names">
+                <div class="lname">
+                    <label for="name">First Name</label><br>
+                    <input type="text" id="Fname">
+                    <span id="name1_error" style="color: red; font-size: 0.9rem;"></span>
+                </div>
+                <br>
+                <div class="lname">
+                    <label for="name" class="lname">Last Name</label><br>
+                    <input type="text" id="Lname">
+                    <span id="name2_error" style="color: red; font-size: 0.9rem;"></span>
+                </div>
+            </div>
+            <br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email">
+            <span id="email_error" style="color: red; font-size: 0.9rem;"></span>
+            <br><br>
+            <div class="fieldset-container">
+                <fieldset>
+                    <label for="">
+                        <input type="radio" id="radio1" name="options">
+                        General Enquiry
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <label for="">
+                        <input type="radio" id="radio2" name="options">
+                        Support Request
+                    </label>
+                </fieldset>
+            </div>
+            <div id="radio_error" style="color: red; font-size: 0.9rem; margin-top: 0.5rem;"></div>
+            <div class="message">
+                <label for="Message">Message</label><br>
+                <textarea name="long-text" id="long-text" rows="10"></textarea>
+                <span id="message_error" style="color: red; font-size: 0.9rem;"></span>
+            </div><br>
+
+            <div class="check-container">
+                <input type="checkbox" id="checkbox">
+                <span>I consent to being contacted by the team</span><br>
+            </div>
+            <div id="checkbox_error" style="color: red; font-size: 0.9rem; margin-top: 1rem;"></div>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
